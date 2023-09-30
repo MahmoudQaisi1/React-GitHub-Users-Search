@@ -1,0 +1,18 @@
+Build React web page with one input and search button
+
+The input takes a username and the search button send a request to https://api.github.com/users/{username} 
+
+for example: https://api.github.com/users/mojombo
+
+once you get the response we need to add a new row in the page to show the following info: 
+User avatar, company, email , number of followers and following, and name and number of public repos.
+
+ 
+
+Notes: 
+
+Try use useForm hook to build the form.
+Use ES6 fetch method.
+Convert returned response into JSON object.
+Each time the user search for a new name, we need to append the result in a new row. If the user search for the same last entered name we don't send a new request, just scroll him to the last row in this case.
+If one of the fields is null, just don't show it

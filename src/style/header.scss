@@ -1,0 +1,76 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-content: space-around;
+    width: 50vw;
+    height: 20vh;
+    margin: 150px auto 100px;
+    padding: 30px 25px;
+    background-color: $white;
+    border-radius: 30px;
+
+    @media screen and (max-width: 1024px) and (min-width: 767px){
+        width: 70vw;
+        margin: 120px auto 80px;
+    }
+
+    @media screen and (max-width: 767px){
+        width: 90vw;
+        margin: 100px auto 70px;
+    }
+
+    h1{
+        font-family: $header-font;
+        color: $blue;
+    }
+
+    form{
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+            font-family: $body-font;
+            font-size: medium;
+            font-weight: bold;
+            background-color: $white;
+            color: $blue;
+            padding: 5px;
+            border: 3px solid $blue;
+            border-radius: 10px;
+            margin:  0  15px;
+
+            &:hover{
+                background-color: $blue;
+                color: $white;
+            }
+        }
+
+        input{
+            font-family: $body-font;
+            width: 25vw;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            border-bottom: 3px solid $blue;
+
+            &:focus{
+                border: none;
+                outline: none;
+                border-bottom: 3px solid $blue;
+            }
+
+            @media screen and (max-width: 1024px) and (min-width: 767px){
+                width: 35vw;
+            }
+        
+            @media screen and (max-width: 767px){
+                width: 50vw;
+            }
+        }
+
+    }
+}

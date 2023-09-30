@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0B3954;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 50vw;
+  height: 20vh;
+  margin: 150px auto 100px;
+  padding: 30px 25px;
+  background-color: #FEFFFE;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .header {
+    width: 70vw;
+    margin: 120px auto 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 90vw;
+    margin: 100px auto 70px;
+  }
+}
+.header h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #0B3954;
+}
+.header form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header form button {
+  font-family: "Cabin", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #FEFFFE;
+  color: #0B3954;
+  padding: 5px;
+  border: 3px solid #0B3954;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.header form button:hover {
+  background-color: #0B3954;
+  color: #FEFFFE;
+}
+.header form input {
+  font-family: "Cabin", sans-serif;
+  width: 25vw;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid #0B3954;
+}
+.header form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #0B3954;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .header form input {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header form input {
+    width: 50vw;
+  }
+}
+
+.table {
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: 30vw 30vw 30vw;
+  background-color: #FEFFFE;
+  gap: 25px;
+  padding: 30px;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .table {
+    grid-template-columns: 45vw 45vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table {
+    grid-template-columns: 90vw;
+  }
+}
+.table p {
+  font-family: "Cabin", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #0B3954;
+  margin: 150px auto;
+  grid-column: 2/2;
+}
+@media screen and (max-width: 1024px) {
+  .table p {
+    grid-column: 1/1;
+  }
+}
+.table .card {
+  display: flex;
+  flex-direction: column;
+  width: 26vw;
+  border: 5px solid #0B3954;
+  padding: 20px;
+  background-color: #BFD7EA;
+  border-radius: 15px;
+  justify-self: center;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .table .card {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table .card {
+    width: 85vw;
+    flex-direction: row;
+  }
+}
+.table .card * {
+  font-family: "Cabin", sans-serif;
+}
+.table .card img {
+  width: 20vw;
+  align-self: center;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 3px solid #0B3954;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .table .card img {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table .card img {
+    width: 30vw;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+
+.outline {
+  box-shadow: 0px 0px 8px 3px #FDCA40;
+}
+
+.error {
+  box-shadow: 0px 0px 15px 8px #FF6663;
+}
+
+/*# sourceMappingURL=App.css.map */
