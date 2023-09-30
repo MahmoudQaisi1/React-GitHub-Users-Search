@@ -5,7 +5,7 @@ const Header = forwardRef(({ search }, ref) => {
 
     return (
         <div className='header' ref={ref}>
-            <h1>Task 1</h1>
+            <h1>Write down the username:</h1>
             <form
                 onSubmit={e => {
                     e.preventDefault();

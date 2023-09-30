@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# GitHub User Profile Search Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a React-based web application that provides a simple and user-friendly interface. The main purpose of this project is to enable users to search for GitHub profiles by entering a username into an input field and clicking a search button. The application will then send a request to the GitHub API endpoint at `https://api.github.com/users/{username}`, where `{username}` represents the entered username.
 
-## Available Scripts
+For example, if a user inputs "mojombo" and clicks the search button, the application will send a request to retrieve information about the GitHub user "mojombo."
 
-In the project directory, you can run:
+Upon receiving the API response, the application will dynamically display the following user information in a new row on the webpage:
 
-### `npm start`
+- User avatar
+- Company
+- Email
+- Number of followers
+- Number of following
+- User's name
+- Number of public repositories
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Project Notes and Features:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Utilize the ES6 fetch method to make API requests.
+2. Convert the returned API response into a JSON object for easier data handling.
+3. Ensure that each time a user searches for a new username, the application appends the corresponding user information in a new row on the page.
+4. Implement a feature that prevents sending a duplicate request for the same username entered consecutively. Instead, scroll the user to the last row displaying the information for the previously searched username.
+5. Handle cases where certain fields, such as company, email, or other user information, may be null by not displaying them on the webpage.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In summary, this project involves building a React web application that allows users to search for GitHub profiles, fetch and display user information from the GitHub API, and provide a seamless user experience with the described features and functionality.
